@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #1E1E1E;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background-color: #00AEEF;
+}
+
+header .cta .btn {
+    background-color: #00AEEF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+header .cta .btn:hover {
+    background-color: #007EA7;
+}
+
+.hero {
+    background: url('office-cleaning.jpg') no-repeat center center/cover;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+.hero .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00AEEF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #007EA7;
+}
+
+.services, .testimonials, .why-us {
+    padding: 50px 10%;
+}
+
+.services h2, .testimonials h2, .why-us h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.service-details p {
+    margin: 10px 0;
+}
+
+.testimonials .testimonial {
+    margin-bottom: 20px;
+}
+
+.testimonials .testimonial span {
+    font-size: 16px;
+    color: #E5E5E5;
+}
+
+.why-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.why-us ul li {
+    background-color: #1E1E1E;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #1E1E1E;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .contact-info p, footer .social-media a {
+    margin: 5px 0;
+}
+
+footer .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #00AEEF;
+    transition: background 0.3s ease;
+}
+
+footer .social-media a:hover {
+    background-color: #007EA7;
+}

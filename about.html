@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        .navbar {
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: rgba(20, 13, 13, 0.78);
+            padding: 1rem 0;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #e6e6e6;
+            font-size: 2rem;
+            padding: 0.5rem 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .navbar a:hover {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 5px;
+        }
+        @media (max-width: 600px) {
+            .navbar a {
+                font-size: 1rem;
+                padding: 0.5rem;
+            }
+        }
+        .image-section {
+            width: 100%;
+            height: 20vh;
+            background-image: url('AdobeStock_330817072_Preview-transformed (3).jpeg');
+            background-size: cover;
+            background-position: center;
+            image-rendering: auto;
+            min-height: 200px;
+            position: relative;
+            padding-top: 80px;
+        }
+        .image-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .image-section .text-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 2;
+        }
+        .image-section h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+        .image-section h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        @media (max-width: 600px) {
+            .image-section h1 {
+                font-size: 2.5rem;
+            }
+            .image-section h2 {
+                font-size: 1.5rem;
+            }
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #1a1a1a, #333);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #e6e6e6;
+        }
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #dcdcdc;
+        }
+        .team-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+        .team-member {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+        .team-member img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        .team-member h3 {
+            font-size: 1.5rem;
+            color: #e6e6e6;
+            margin-bottom: 0.5rem;
+        }
+        .team-member p {
+            font-size: 1rem;
+            color: #dcdcdc;
+        }
+        .cards-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        .card-text {
+            padding: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #e6e6e6;
+        }
+        .card button {
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            margin: 1rem 0;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .card button:hover {
+            background-color: #007bff;
+            transform: scale(1.05);
+        }
+        .card button a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="bigbuild.html">Services</a>
+        <a href="#contact">Kontakt</a>
+    </div>
+
+    <div class="image-section">
+        <div class="text-content">
+            <h1>Cleantastic</h1>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Wer sind wir?</h2>
+        <p>
+            Cleantastic ist seit über einem Jahrzehnt ein führendes Unternehmen in der Reinigungsbranche. Unsere Mission ist es, erstklassige Reinigungsdienste anzubieten, die die Erwartungen unserer Kunden übertreffen. Wir sind stolz darauf, umweltfreundliche Produkte zu verwenden und einen herausragenden Kundenservice zu bieten.
+        </p>
+
+        <div class="team-section">
+            <div class="team-member">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4LVdi5Cz6we1C-T6_E8klJzrY7SWIAOXk8w&s" alt="Team Member 1">
+                <h3>John Doe</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="https://fivefaces.com.au/wp-content/uploads/2023/01/cropped-cropped-health-face-1-2.jpg" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>Operations Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="https://fivefaces.com.au/wp-content/uploads/2023/01/education-face.jpg" alt="Team Member 3">
+                <h3>Emily Johnson</h3>
+                <p>Customer Service Lead</p>
+            </div>
+        </div>
+
+        <div class="cards-section">
+            <div class="card">
+                <img src="1.jpg" alt="Große Gebäudereinigung">
+                <div class="card-text">Große Gebäudereinigung</div>
+                <button><a href="bigbuild.html">Mehr erfahren</a></button>
+            </div>
+            <div class="card">
+                <img src="2.jpg" alt="Büroreinigung">
+                <div class="card-text">Büroreinigung</div>
+                <button><a href="office.html">Mehr erfahren</a></button>
+            </div>
+            <div class="card">
+                <img src="3.jpg" alt="Hausreinigung">
+                <div class="card-text">Hausreinigung</div>
+                <button><a href="home.html">Mehr erfahren</a></button>
+            </div>
+            <div class="card">
+                <img src="4.jpg" alt="Fensterreinigung">
+                <div class="card-text">Fensterreinigung</div>
+                <button><a href="windows.html">Mehr erfahren</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

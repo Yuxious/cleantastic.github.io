@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angebot anfordern - Cleantastic</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Page-specific styles */
+        .quote-form {
+            background-color: #1b1b1b;
+            padding: 40px 20px;
+            max-width: 600px;
+            margin: 50px auto;
+            border-radius: 10px;
+            color: #e6e6e6;
+        }
+
+        .quote-form h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #e6e6e6;
+        }
+
+        .quote-form p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .quote-form input,
+        .quote-form textarea,
+        .quote-form select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            background-color: #141414;
+            border: 1px solid #333;
+            border-radius: 5px;
+            color: #e6e6e6;
+        }
+
+        .quote-form input:focus,
+        .quote-form textarea:focus,
+        .quote-form select:focus {
+            outline: none;
+            border-color: #eeedec;
+        }
+
+        .quote-form .btn {
+            background-color: #f0ede6;
+            color: #141414;
+            padding: 12px;
+            font-size: 18px;
+            margin-top: 10px;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .quote-form .btn:hover {
+            background-color: #e6e6e6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Cleantastic</div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="office.html">Büroreinigung</a></li>
+                <li><a href="windows.html">Fensterreinigung</a></li>
+                <li><a href="home.html">Hausreinigung</a></li>
+                <li><a href="bigbuild.html">Gebäudereinigung</a></li>
+                <li><a href="angebot.html" class="active">Angebot anfordern</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="cta">
+            <a href="angebot.html" class="btn">Angebot anfordern</a>
+        </div>
+    </header>
+
+    <section class="quote-form">
+        <h2>Angebot anfordern</h2>
+        <form action="submit_form.php" method="post">
+            <p><label for="name">Ihr Name:</label></p>
+            <input type="text" id="name" name="name" required>
+
+            <p><label for="email">Ihre Email:</label></p>
+            <input type="email" id="email" name="email" required>
+
+            <p><label for="phone">Ihre Telefonnummer:</label></p>
+            <input type="tel" id="phone" name="phone" required>
+
+            <p><label for="service">Welchen Service benötigen Sie?</label></p>
+            <select id="service" name="service" required>
+                <option value="office">Büroreinigung</option>
+                <option value="windows">Fensterreinigung</option>
+                <option value="home">Hausreinigung</option>
+                <option value="bigbuild">Gebäudereinigung</option>
+                <option value="other">Andere</option>
+            </select>
+
+            <p><label for="message">Zusätzliche Informationen:</label></p>
+            <textarea id="message" name="message" rows="6"></textarea>
+
+            <button type="submit" class="btn">Angebot anfordern</button>
+        </form>
+    </section>
+
+    <footer id="contact">
+        <div class="contact-info">
+            <p>Telefon: +49 123 456 7890</p>
+            <p>Email: info@reinigungsdienst.de</p>
+            <p>Adresse: Musterstraße 1, 12345 Berlin</p>
+        </div>
+        <div class="social-media">
+            <a href="#" class="social-icon">LinkedIn</a>
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('header nav');
+
+            hamburger.addEventListener('click', function () {
+                navMenu.classList.toggle('active');
+                hamburger.classList.toggle('menu-open');
+            });
+        });
+    </script>
+</body>
+</html>

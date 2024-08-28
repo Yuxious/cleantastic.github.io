@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gebäudereinigung - Professionelle Reinigungsdienste</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+.hero {
+    background: url('1000_F_873419489_ErHMyhppkXVI27AemmLbx75Qg55dkveE-transformed.jpeg') no-repeat center center/cover;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">Cleantastic</a></div>
+        <div class="hamburger">&#9776;</div> <!-- Hamburger icon -->
+        <nav>
+            <ul>
+                <li><a href="office.html">Büroreinigung</a></li>
+                <li><a href="windows.html">Fensterreinigung</a></li>
+                <li><a href="home.html">Hausreinigung</a></li>
+                <li><a href="bigbuild.html" class="active">Gebäudereinigung</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="cta">
+            <a href="prices.html" class="btn">Angebot anfordern</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Gebäudereinigung für Großprojekte</h1>
+            <p>Maßgeschneiderte Reinigungslösungen für große und komplexe Einrichtungen.</p>
+            <a href="#consultation" class="btn">Beratung anfordern</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Unsere Gebäudereinigungsdienste</h2>
+        <div class="service-details">
+            <p><strong>Komplette Innenreinigung:</strong> Von Böden über Wände bis hin zu Decken, wir reinigen jedes Detail Ihrer Einrichtung.</p>
+            <p><strong>Fassadenreinigung:</strong> Professionelle Reinigung von Glas, Beton, Metall und anderen Außenmaterialien.</p>
+            <p><strong>Bauabschlussreinigung:</strong> Spezialisierte Reinigung nach Bauarbeiten, um Ihr Gebäude bereit für den Betrieb zu machen.</p>
+            <p><strong>Spezialreinigung:</strong> Reinigung von Lüftungssystemen, Aufzügen, Treppenhäusern und Parkhäusern.</p>
+            <p><strong>Hygiene und Desinfektion:</strong> Vollständige Desinfektion von hoch frequentierten Bereichen, um die Sicherheit zu gewährleisten.</p>
+        </div>
+    </section>
+
+    <section class="process">
+        <h2>Unser Reinigungsprozess</h2>
+        <div class="process-details">
+            <p><strong>1. Bedarfsermittlung:</strong> Wir analysieren Ihre spezifischen Anforderungen und erstellen einen maßgeschneiderten Reinigungsplan.</p>
+            <p><strong>2. Einsatz modernster Technologie:</strong> Wir nutzen fortschrittliche Reinigungsgeräte und -techniken, um optimale Ergebnisse zu erzielen.</p>
+            <p><strong>3. Nachhaltigkeit:</strong> Verwendung umweltfreundlicher Reinigungsprodukte und Techniken, die sowohl effektiv als auch umweltbewusst sind.</p>
+            <p><strong>4. Qualitätskontrolle:</strong> Regelmäßige Überprüfungen und Anpassungen, um sicherzustellen, dass unsere hohen Standards stets eingehalten werden.</p>
+        </div>
+    </section>
+
+    <section class="clients">
+        <h2>Unsere Großkunden</h2>
+        <div class="client-logos">
+            <img src="https://media.tenor.com/yskj0PnyEpoAAAAM/borpynino.gif" alt="Kunde 1 Logo">
+            <img src="https://m.media-amazon.com/images/I/71MWZE0Qx9L.png" alt="Kunde 2 Logo">
+            <img src="https://qph.cf2.quoracdn.net/main-qimg-ad430f124c03be0c241242cd6071f52f-lq" alt="Kunde 3 Logo">
+            <img src="https://wallpapers.com/images/hd/meme-faces-funny-pictures-x7rujysb8bcbb7yg.jpg" alt="Kunde 4 Logo">
+        </div>
+        <div class="testimonials">
+            <p>"Das Team hat unser Bürogebäude in Rekordzeit gereinigt und es sieht fantastisch aus!"</p>
+            <span>- Firma ABC</span>
+        </div>
+        <div class="testimonials">
+            <p>"Die Gebäudereinigung war so gründlich, dass wir kaum glauben konnten, wie sauber alles war."</p>
+            <span>- Firma XYZ</span>
+        </div>
+    </section>
+
+    <section class="why-us">
+        <h2>Warum uns für Ihre Gebäudereinigung wählen?</h2>
+        <ul>
+            <li>Erfahrung in der Reinigung von Großprojekten</li>
+            <li>Zuverlässige und geschulte Fachkräfte</li>
+            <li>Individuelle Reinigungspläne, angepasst an Ihre Bedürfnisse</li>
+            <li>Flexibilität bei der Terminplanung, um Betriebsunterbrechungen zu vermeiden</li>
+        </ul>
+    </section>
+
+    <footer id="contact">
+        <div class="contact-info">
+            <p>Telefon: +49 123 456 7890</p>
+            <p>Email: info@reinigungsdienst.de</p>
+            <p>Adresse: Musterstraße 1, 12345 Berlin</p>
+        </div>
+        <div class="social-media">
+            <a href="#" class="social-icon">LinkedIn</a>
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('nav');
+
+        hamburger.addEventListener('click', function () {
+            navMenu.classList.toggle('active'); // Toggle the active class on the nav
+        });
+
+        // Close the menu when clicking outside of it
+        document.addEventListener('click', function (event) {
+            if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
+                navMenu.classList.remove('active'); // Close the menu if clicked outside
+            }
+        });
+    });
+</script>
+</html>
