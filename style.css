@@ -100,6 +100,9 @@ header .cta .btn:hover {
     cursor: pointer;
     color: #ffffff; /* White color for the hamburger icon */
     margin-left: auto; /* Push hamburger to the right */
+    margin-bottom: 3px;
+    margin-left: 10px;
+    
 }
 
 /* Responsive Styles */
@@ -138,6 +141,7 @@ header .cta .btn:hover {
 
     .hamburger {
         display: block; /* Show hamburger icon on small screens */
+        
     }
 
     /* Hide the button on smaller screens */
@@ -156,6 +160,9 @@ header .cta .btn:hover {
 @media (min-width: 769px) {
     .hamburger {
         display: none; /* Hide hamburger icon on larger screens */
+        
+        margin-left: 10px;
+        
     }
 }
 
@@ -361,6 +368,8 @@ footer .social-icon:hover {
     .hamburger {
         display: block; /* Show hamburger icon */
         cursor: pointer; /* Pointer cursor */
+        margin-top: 3px;
+
     }
 
     .clients .client-logos img {
@@ -431,5 +440,8 @@ footer .social-icon:hover {
     .hero .btn {
         padding: 8px 15px; /* Smaller button */
         font-size: 16px; /* Smaller button text */
+    }
+    .hamburger{
+        margin-top: 10px;
     }
 }
